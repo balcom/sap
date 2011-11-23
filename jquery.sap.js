@@ -12,7 +12,9 @@
     $.fn.sap = function(options) {
 
     var defaults = {
-        distanceFromTheTop: 0
+        distanceFromTheTop: 0,
+        activate: function(objizzle) { },
+        deactivate: function(objizzle) { }
     };
 
     options = $.extend(defaults, options);
@@ -42,6 +44,7 @@
             $shim.css({width: width, height: $objizzle.height()});
 
             $objizzle.before($shim);
+            options.activate($objizzle);
         }
         else if (top + options.distanceFromTheTop < oldTop)
         {
@@ -51,6 +54,7 @@
                 width: width,
                 top: ''
             });
+            options.deactivate($objizzle);
         }
     });
   };
