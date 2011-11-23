@@ -17,7 +17,7 @@ You can also specify the distance from the top of the viewport that you want Sap
     $('#item').sap({
 		distanceFromTheTop: 0
 	});
-	
+
 ## Demo
 
 [View Demo Here](http://www.zackkitzmiller.info/sap/)
@@ -26,7 +26,7 @@ You can also specify the distance from the top of the viewport that you want Sap
 ## Known Issues
 
 * Sap does not work on iOS.
-* Sap does not always reset default CSS properly. 
+* Sap does not always reset default CSS properly.
 
 ## License
 
